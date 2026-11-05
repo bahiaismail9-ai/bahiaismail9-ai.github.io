@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ismail Bahia — IT Systems and Network Technician. Portfolio, projects and contact.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Ismail Bahia | IT Systems & Networks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ismail Bahia home"><span class="brand-mark">IB</span><span>ismail<span class="brand-dot">.</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about" data-i18n="navAbout">About</a><a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a><a href="#experience" data-i18n="navExperience">Experience</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">FR</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="availability">Open to junior opportunities & internships</span></div>
+        <p class="hero-kicker" data-i18n="hello">HELLO, I'M</p>
+        <h1>Ismail <span class="gradient-text">Bahia</span><span class="accent">.</span></h1>
+        <h2 data-i18n="role">IT Systems & Network Technician</h2>
+        <p class="hero-description" data-i18n="intro">Specialized Technician in Digital Infrastructure, focused on systems, networks and IT support. I enjoy building practical labs and turning technical knowledge into reliable solutions.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects" data-i18n="viewProjects">Explore my projects <span>↗</span></a>
+          <a class="button button-ghost" href="#contact" data-i18n="contactMe">Contact me</a>
+        </div>
+        <div class="hero-meta"><span>📍 Ben Ahmed, Morocco</span><span class="meta-separator"></span><span data-i18n="diplomaShort">DTS · Digital Infrastructure</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="photo-orbit orbit-a"></div><div class="photo-orbit orbit-b"></div>
+        <div class="photo-frame">
+          <img id="profilePhoto" src="assets/profile.jpg" alt="Portrait of Ismail Bahia" onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid';">
+          <div class="photo-fallback" id="photoFallback"><span>IB</span><small data-i18n="addPhoto">Add your photo</small></div>
+        </div>
+        <div class="floating-card card-top"><span class="float-icon">⌘</span><span><b>Systems</b><small>Windows · Linux</small></span></div>
+        <div class="floating-card card-bottom"><span class="float-icon purple">⌁</span><span><b>Networks</b><small>TCP/IP · Cisco</small></span></div>
+        <div class="visual-caption">IT • SYSTEMS • NETWORKS</div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal"><p class="section-label" data-i18n="aboutLabel">01 / ABOUT ME</p><h2 data-i18n="aboutTitle">A practical mindset.<br><span class="muted">A passion for IT.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-i18n="aboutText">I am a Moroccan IT technician holding a Specialized Technician Diploma in Digital Infrastructure, option Systems and Networks, from OFPPT. My training and hands-on internship helped me develop a foundation in IT support, system administration and network troubleshooting.</p>
+          <p data-i18n="aboutText2">I am continuously learning through personal lab projects, especially around IT service management, virtualization and infrastructure monitoring.</p>
+          <div class="tag-row"><span>Problem solving</span><span>Continuous learning</span><span>Teamwork</span></div>
+        </div>
+        <div class="info-panel reveal">
+          <div class="info-row"><span data-i18n="location">Location</span><strong>Ben Ahmed, Morocco</strong></div>
+          <div class="info-row"><span data-i18n="education">Education</span><strong>DTS · OFPPT</strong></div>
+          <div class="info-row"><span data-i18n="specialization">Specialization</span><strong data-i18n="specializationValue">Systems & Networks</strong></div>
+          <div class="info-row"><span data-i18n="languages">Languages</span><strong data-i18n="languagesValue">Arabic · French · English · German (beginner)</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal"><p class="section-label" data-i18n="skillsLabel">02 / TOOLKIT</p><h2 data-i18n="skillsTitle">Technical <span class="muted">skills.</span></h2><p class="section-subtitle" data-i18n="skillsSub">Technologies and areas I have studied or practiced.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-icon">▣</div><h3>Systems Administration</h3><p>Windows 10/11 · Windows Server fundamentals · Ubuntu Server · Linux</p></article>
+        <article class="skill-card reveal"><div class="skill-icon">⌁</div><h3>Networking</h3><p>TCP/IP · IPv4 · DHCP · DNS · VLAN fundamentals · Cisco Packet Tracer</p></article>
+        <article class="skill-card reveal"><div class="skill-icon">◈</div><h3>IT Service Management</h3><p>GLPI · IT inventory · Help desk concepts · Incident management</p></article>
+        <article class="skill-card reveal"><div class="skill-icon">▤</div><h3>Virtualization</h3><p>VMware · Proxmox fundamentals · Virtual machines · Home lab</p></article>
+        <article class="skill-card reveal"><div class="skill-icon">◉</div><h3>Monitoring</h3><p>Zabbix fundamentals · Infrastructure monitoring concepts</p></article>
+        <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Tools & Workflow</h3><p>Git/GitHub basics · Remote support · Documentation · Troubleshooting</p></article>
+      </div>
+      <p class="small-note" data-i18n="skillsNote">Skill list reflects learning and practical exposure; it does not imply professional-level mastery of every tool.</p>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal"><p class="section-label" data-i18n="projectsLabel">03 / SELECTED WORK</p><h2 data-i18n="projectsTitle">Projects & <span class="muted">labs.</span></h2><p class="section-subtitle" data-i18n="projectsSub">Hands-on practice that helps me understand real IT environments.</p></div>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-number">01</span><span class="project-type">HOME LAB</span></div>
+          <div class="project-graphic glpi-graphic"><div class="server-stack"><i></i><i></i><i></i></div><span>GLPI</span></div>
+          <h3>GLPI IT Asset Management Lab</h3>
+          <p data-i18n="glpiDesc">Set up GLPI on Ubuntu Server in a virtualized home lab, configured HTTPS with a local certificate, and connected a Windows client using GLPI Agent to practice inventory and IT asset management.</p>
+          <div class="project-tags"><span>Ubuntu Server</span><span>GLPI</span><span>Apache</span><span>HTTPS</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-number">02</span><span class="project-type">VIRTUALIZATION</span></div>
+          <div class="project-graphic proxmox-graphic"><div class="nodes"><i></i><i></i><i></i></div><span>VM</span></div>
+          <h3>Virtualization & Infrastructure Lab</h3>
+          <p data-i18n="proxmoxDesc">Explored virtualization and server environments, including Proxmox exposure during my internship and virtual machines in a personal VMware lab.</p>
+          <div class="project-tags"><span>Proxmox</span><span>VMware</span><span>Virtual Machines</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-number">03</span><span class="project-type">LEARNING</span></div>
+          <div class="project-graphic network-graphic"><div class="network-lines"><i></i><i></i><i></i><i></i></div><span>NETWORK</span></div>
+          <h3>Networking Practice</h3>
+          <p data-i18n="networkDesc">Practiced network fundamentals and troubleshooting concepts through labs and exercises, including IP addressing, connectivity tests and Cisco Packet Tracer.</p>
+          <div class="project-tags"><span>TCP/IP</span><span>IPv4</span><span>Cisco</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-heading reveal"><p class="section-label" data-i18n="experienceLabel">04 / EXPERIENCE & EDUCATION</p><h2 data-i18n="experienceTitle">My <span class="muted">journey.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date" data-i18n="internshipDate">Internship · 1 month</div><div class="timeline-content"><h3 data-i18n="internshipTitle">IT Intern — Tribunal de Première Instance</h3><p class="timeline-place">Ben Ahmed, Morocco</p><p data-i18n="internshipDesc">Gained practical exposure to IT support, equipment installation and maintenance, printer support, scanning and organizing digital files, and a server environment using Proxmox and GLPI on Ubuntu Server.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">2024 – 2026</div><div class="timeline-content"><h3 data-i18n="diplomaTitle">Specialized Technician Diploma (DTS)</h3><p class="timeline-place">OFPPT · ISTA Ben Ahmed</p><p data-i18n="diplomaDesc">Digital Infrastructure — Systems and Networks. Diploma success certificate obtained in 2026.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">2023</div><div class="timeline-content"><h3 data-i18n="bacTitle">Baccalaureate — Physical Sciences</h3><p class="timeline-place" data-i18n="morocco">Morocco</p></div></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel reveal">
+        <p class="section-label" data-i18n="contactLabel">05 / GET IN TOUCH</p>
+        <h2 data-i18n="contactTitle">Let's build something<br><span class="gradient-text">reliable together.</span></h2>
+        <p data-i18n="contactText">I am open to junior IT opportunities, internships and professional connections.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" id="emailLink" href="#" data-i18n="emailMe">Email me ↗</a>
+          <a class="button button-ghost" id="linkedinLink" href="#" target="_blank" rel="noopener" hidden>LinkedIn ↗</a>
+        </div>
+        <p class="contact-hint" data-i18n="contactHint">Add your email and LinkedIn URL in script.js to activate these links.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">IB</span><span>ismail<span class="brand-dot">.</span></span></a><span>© <span id="year"></span> Ismail Bahia</span><span data-i18n="footer">Built with curiosity and a passion for IT.</span></footer>
+</body>
+</html>
